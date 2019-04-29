@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="/main.css">
+        <title>StudBook</title>
+        <meta name="description" content="Быстрый поиск учебников для студентов по номеру группы">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <header>
+            <a href=/index.html><h1>StudBook</h1></a>
+        <h2>Поиск учебников по номеру группы</h2>
+        </header>
+        
+        <selector>
+            <p1>
+            <select id="institute">
+                <option value="null">Выберите ВУЗ</option>
+                <option value="KFU">КФУ</option>
+                <option value="KGASU">КГАСУ</option>
+                <option value="KHTI">КХТИ</option>
+                <option value="Energo">Энерго</option>
+                </select>
+            </p1>
+        
+            <p1>
+                <div id="modelFaculty" style="display: none;">
+            <select id="faculty" onchange="onchangeModelSelect(this);">
+                <option value="null">Выберите факультет</option>
+                <option value="ITIS">ИТИС</option>
+                <option value="VMK">ВМК</option>
+                <option value="MehMat">Мехмат</option>
+                <option value="IMO">ИМО</option>
+                <option value="ISFNIMK">ИСФНИМК</option>
+                </select>
+                    </div>
+            </p1>
+            
+            <p1>
+                <div id="modelGroup" style="display: none;">
+            <select id="group" onchange="onchangeModelSelect(this);">
+                <option value="null">Выберите группу</option>
+                <option value="11-807">11-807</option>
+                <option value="11-808">11-808</option>
+                <option value="11-809">11-809</option>
+                <option value="11-810">11-810</option>
+                <option value="11-811">11-811</option>
+                </select>
+                    </div>
+            </p1>
+        </selector>
+        
+        <h4>Список учебников для ВШИТИС/11-809</h4>
+        <list>
+        <ul>
+            <li><a href="http://google.com">Алгебра и геометрия</a></li>
+            <li><a href="http://google.com">Математический анализ</a></li><li><a href="http://google.com">Дискретная математика</a></li><li><a href="http://google.com">История России</a></li><li><a href="http://google.com">Русский язык и культура речи</a></li>
+            </ul>
+        </list>
+
+    </body>
+</html>
