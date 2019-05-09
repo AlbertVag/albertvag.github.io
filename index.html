@@ -7,48 +7,57 @@
         <link rel="stylesheet" type="text/css" href="main.css">
         <meta name="description" content="Быстрый поиск учебников для студентов по номеру группы">
         <link rel="stylesheet" href="main.css">
+        <script src='http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular.js'></script>
+          <script  src="/Scripts/main.js"></script>
     </head>
     <body>
         <logo>
-            <img src="Icons/logo.png"
+            <img src="/Icons/logo.png"
                  width="212">
         </logo>
 
-        <groupsearch>
+        <!--<groupsearch>
             <groupinput>
                 <input type="groupchoise" value="ВУЗ, факультет, группа" size="32">
             </groupinput>
-        </groupsearch>
+        </groupsearch>-->
+        
+          <groupsearch ng-app="app" ng-controller="mainCtrl" class="search">
+  <dropdown-list data-items-list="itemsList" data-placeholder="Item name"></dropdown-list>
+</groupsearch>
         
         <bookseach>
             <bookinput>
-                <input type="bookchoise" value="Книга или автор" size="158">
+                <input type="bookchoise" value="Книга или автор" size="145">
              </bookinput>
         </bookseach>
         
         <main1>
-            <h1>Библиотека</h1>
+            <librarytitle><h1>Библиотека</h1></librarytitle>
             <subjects>
                 <subjectstitle>
                 <h2>Предметы</h2>
                 </subjectstitle>
                 <subjectsscroll>
-                    <subjectslistelement>
+                    <subjectelement>
                         <subject>Алгебра</subject>
-                    </subjectslistelement>
-                    <subjectslistelement>
+                    </subjectelement>
+                    <subjectelement>
                         <subject>Геометрия</subject>
-                    </subjectslistelement>
-                    <subjectslistelement>
+                    </subjectelement>
+                    <subjectelement>
                         <subject>История</subject>
-                    </subjectslistelement>
-                    <subjectslistelement>
+                    </subjectelement>
+                    <subjectelement>
                         <subject>Дискретка</subject>
-                    </subjectslistelement>
-                    <subjectslistelement>
+                    </subjectelement>
+                    <subjectelement>
                         <subject>Русский</subject>
-                    </subjectslistelement>
+                    </subjectelement>
                  </subjectsscroll>
+                <allsubjects>
+                    <a href="Subjects/index.html"><button>Все предметы</button></a>
+                </allsubjects>
             </subjects>
             
             <books>
@@ -56,31 +65,38 @@
                 <h2>Книги</h2>
                 </booktitle>
                 <booksscroll>
-                    <bookselement>
-                        <book>Алгем</book>
-                    </bookselement>
-                    <bookselement>
-                        <book>Матан</book>
-                    </bookselement>
-                    <bookselement>
-                        <book>Русский</book>
-                    </bookselement>
-                    <bookselement>
-                        <book>Дискретка</book>
-                    </bookselement>
-                    <bookselement>
-                        <book>Инфа</book>
-                    </bookselement>
-                    <bookselement>
-                        <book>История</book>
-                    </bookselement>
-                    <bookselement>
-                        <book>Англ</book>
-                    </bookselement>
-                    <bookselement>
-                        <book>АИСД</book>
-                    </bookselement>
+                    <bookelement>
+                        <img src="/Details/bookTemplate_3.png" width="154" height="229">
+                        <bookscrollname>Название <bookauthor><br>Автор</bookauthor></bookscrollname>
+                    </bookelement>
+                    <bookelement>
+                        <img src="/Details/bookTemplate_3.png" width="154" height="229">
+                        <bookscrollname>Название <bookauthor><br>Автор</bookauthor></bookscrollname>
+                    </bookelement>
+                    <bookelement>
+                        <img src="/Details/bookTemplate_3.png" width="154" height="229">
+                        <bookscrollname>Название <bookauthor><br>Автор</bookauthor></bookscrollname>
+                    </bookelement>
+                    <bookelement>
+                        <img src="/Details/bookTemplate_3.png" width="154" height="229">
+                        <bookscrollname>Название <bookauthor><br>Автор</bookauthor></bookscrollname>
+                    </bookelement>
+                    <bookelement>
+                        <img src="/Details/bookTemplate_3.png" width="154" height="229">
+                        <bookscrollname>Название <bookauthor><br>Автор</bookauthor></bookscrollname>
+                    </bookelement>
+                    <bookelement>
+                        <img src="/Details/bookTemplate_3.png" width="154" height="229">
+                        <bookscrollname>Название <bookauthor><br>Автор</bookauthor></bookscrollname>
+                    </bookelement>
+                    <bookelement>
+                        <img src="/Details/bookTemplate_3.png" width="154" height="229">
+                        <bookscrollname>Название <bookauthor><br>Автор</bookauthor></bookscrollname>
+                    </bookelement>
                 </booksscroll>
+                <allbooks>
+                    <a href="Books/index.html"><button>Все учебники</button></a>
+                </allbooks>
             </books>
             
             <description>

@@ -6,15 +6,17 @@
     font-weight: normal;
 }
 body {
-    max-width: 1200px;
+    max-width: 1024px;
+    height: 2000px;
     margin: 0 auto;
     background-color: #F6F6F6;
     position: relative;
 }
 
 logo {
-    position: re;
+    position: relative;
     float: left;
+    margin: 20px;
 }
 
 groupsearch {
@@ -22,29 +24,20 @@ groupsearch {
     float: right;
     width: 343px;
     height: 75px;
+    margin: 20px;
     background: url(Details/VFG_v1.png) no-repeat;
     background-size: cover;
 }
 
-
-
 bookseach {
     position: relative;
     float: left;
-    margin-top: 20px;
-    width: 1200px;
-    height: 74px;
-    background: url(Details/Search_G.png) center no-repeat;
+    margin: 20px 0px 0px 0px;
+    width: 1024px;
+    height: 64px;
+    background: url(/Details/Search_G.png) center no-repeat;
     background-size: cover;
 }
-
-
-
-
-
-
-
-
 
 main {
     position: relative;
@@ -52,20 +45,17 @@ main {
 }
 
 h1 {
-    position: relative;
     font-family: "MyriadPro";
     color: #000000;
-    text-align: center;
     font-size: 38px;
-    padding: 250px 0px 0px 0px;
 }
 
 subjects {
     position: relative;
     float: left;
-    margin-top: 0px;
+    margin-top: 100px;
     width: 100%;
-    height: 273px;
+    height: 233px;
     background: url(Details/item.png) center no-repeat;
     background-size: cover;
     overflow-x: scroll;
@@ -75,27 +65,18 @@ subjects {
 
 main1 {
     position: relative;
-    padding: 0px;
 }
 
 h2 {
     position: absolute;
-    margin: 30px 0px 0px 50px;
+    margin: 25px 0px 0px 50px;
     font-family: "MyriadPro";
     font-size: 30px;
 }
 
 bookinput {
     position: absolute;
-    margin: 20px 0px 0px 29px;
-}
-
-
-
-
-
-input {
-    height: 30px
+    margin: 15px 0px 0px 29px;
 }
 
 groupinput {
@@ -103,17 +84,15 @@ groupinput {
     margin: 17px 0px 0px 30px;
 }
 
-subjectslistelement {
+subjectelement {
     position: relative;
-    margin: 110px -15px 0px 20px;
+    margin: 10px 18px 0px 22px;
     width: 296px;
     height: 144px;
-    background: url(Details/subject.png) center no-repeat;
+    background: url(/Details/subject.png) center no-repeat;
     background-size: cover;
     display: inline-block;
 }
-
-
 
 subject {
     position: absolute;
@@ -122,9 +101,8 @@ subject {
     font-size: 24px;
 }
 
-
-
 subjectsscroll {
+    margin: 60px 0px 0px 25px;
     position: absolute;
     display: flex;
     justify-content:center;
@@ -132,17 +110,13 @@ subjectsscroll {
     white-space: nowrap;
 }
 
-
-
-
-
 books {
     position: relative;
     float: left;
-    margin-top: 50px;
+    margin-top: 150px;
     width: 100%;
-    height: 400px;
-    background: url(Details/book.png) center no-repeat;
+    height: 342px;
+    background: url(/Details/book.png) center no-repeat;
     background-size: cover;
     overflow-x: scroll;
     verflow-x: hidden;
@@ -154,23 +128,24 @@ booksscroll {
     justify-content:center;
     align-items: center;
     white-space: nowrap;
+    margin: 30px 0px 0px 30px;
 }
 
-bookselement {
+bookelement {
     position: relative;
-    margin: 110px -20px 0px 20px;
-    width: 154px;
+    margin: 20px 0px 0px 0px;
+    width: 200x;
     height: 229px;
-    background: url(Details/book_G.png) center no-repeat;
-    background-size: cover;
     display: inline-block;
 }
 
-book {
-    position: absolute;
-    margin: 230px 0px 0px 20px;
+bookname {
+    position: relative;
+    float: right;
+    margin: 25px 0px 0px 0px;
+    padding-right: 10px;
     font-family: "MyriadPro";
-    font-size: 18px;
+    font-size: 20px;
 }
 
 description {
@@ -186,4 +161,135 @@ p {
     position: absolute;
     margin-top: 80px;
     float: left;
+}
+
+bookseach2 {
+    position: relative;
+    float: left;
+    margin: 30px 0px 0px 0px;
+    width: 535px;
+    height: 65px;
+    background: url(/Details/Search.png) center no-repeat;
+    background-size: cover;
+}
+
+subjectstable {
+    position: relative;
+    width: 1024px;
+    height: 1000px;
+    margin: 300px 0px 0px 0px;
+}
+
+allsubjects {
+    position: absolute;
+    right: 0;
+    margin: 20px 40px;
+}
+
+allbooks {
+    position: absolute;
+    right: 0;
+    margin: 20px 40px;
+}
+
+bookstable {
+    position: relative;
+    height: 1000px;
+    margin: 300px 0px 0px 0px;
+}
+
+
+
+bookauthor {
+    color: #8D8F91;
+}
+
+allbookstitle {
+    position: relative;
+    text-align: center;
+    margin: 250px;
+}
+
+librarytitle {
+    position: absolute  ;
+    text-align: center;
+    margin: 200px 0px 0px 150px;
+}
+
+allsubjectstitle {
+    position: relative;
+    text-align: center;
+    margin: 250px;
+}
+
+bookscrollname {
+    position: relative;
+    float: left;
+    font-family: "MyriadPro";
+    margin: -15px 0px 0px 15px;
+    font-size: 120%;
+}
+
+input {
+  padding: 3px 5px;
+  border: 1px solid gray;
+  border-radius: 3px;
+}
+
+.list {
+  list-style-type: none;
+  margin: 0;
+  opacity: 0;
+  padding: 4px 7px;
+  position: absolute;
+  margin-left: -1000px;
+  background: white;
+  box-shadow: 1px 1px 6px rgb(195, 195, 195);
+  border-radius: 2px;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+  z-index:10;
+  
+}
+
+.list li {
+  padding: 3px 5px;
+  cursor: pointer;
+}
+
+.list li:hover {
+  background: lightgray;
+}
+
+.show .list { 
+  margin-left:1px;
+  opacity: 1;
+
+}
+
+.list li .amount {
+  display: inline-block;
+  padding: 20px 30px;
+  background-color: rgb(83, 177, 211);
+  border-radius: 3px;
+  margin: 0 0 3px 10px;
+  font-size: 65%;
+  color: white;
+}
+
+.search{
+    border-radius:20px;
+}
+
+.searchContainer img{
+    width: 40px;
+    height: 20px;
+    position:absolute;
+    top:20px;
+    right: 20px;
+}
+
+dropdown-list {
+    position: absolute;
+    padding: 22px 0px 0px 30px;
 }
