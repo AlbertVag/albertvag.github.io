@@ -5,17 +5,10 @@ angular.module('app', [])
    * Создаем список элементов
    */
   $scope.itemsList = [
-    {'name': 'КФУ ИТИС 11-801','link':"/Universities/KFU/ITIS/11-801/index.html"},
-    {'name': 'КФУ ИТИС 11-802','link':"/Universities/KFU/ITIS/11-802/index.html"},
-    {'name': 'КФУ ИТИС 11-803','link':"/Universities/KFU/ITIS/11-803/index.html"},
-    {'name': 'КФУ ИТИС 11-804','link':"/Universities/KFU/ITIS/11-804/index.html"},
-    {'name': 'КФУ ИТИС 11-805','link':"/Universities/KFU/ITIS/11-805/index.html"},
-    {'name': 'КФУ ИТИС 11-806','link':"/Universities/KFU/ITIS/11-806/index.html"},
-    {'name': 'КФУ ИТИС 11-807','link':"/Universities/KFU/ITIS/11-807/index.html"},
-    {'name': 'КФУ ИТИС 11-808','link':"/Universities/KFU/ITIS/11-808/index.html"},
-    {'name': 'КФУ ИВМИТ 13-901'},
-    {'name': 'КФУ ИВМИТ 13-822'},
-    {'name': 'КФУ МЕХМАТ 8-201'},
+    {'name': 'КФУ, ИТИС','link':"/Universities/KFU/ITIS/index.html"},
+    {'name': 'КФУ, ИВМиИТ','link':"/Universities/KFU/ITIS/index.html"},
+    {'name': 'КФУ, Мех. Мат.','link':"/Universities/KFU/ITIS/index.html"},
+    {'name': 'КФУ, ИСФНиМК','link':"/Universities/KFU/ITIS/index.html"},
 
   ];
 })

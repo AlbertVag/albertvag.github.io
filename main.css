@@ -16,27 +16,29 @@ body {
 logo {
     position: relative;
     float: left;
-    margin: 20px;
+    margin: 20px 0px 0px 0px;
 }
 
 groupsearch {
     position: relative;
     float: right;
-    width: 343px;
-    height: 75px;
+    width: 243px;
+    height: 40px;
     margin: 20px;
-    background: url(Details/VFG_v1.png) no-repeat;
-    background-size: cover;
+    background: #FFFFFF;
+    border-radius: 18px;
+    box-shadow: 0 0 2px;
 }
 
 bookseach {
     position: relative;
     float: left;
     margin: 20px 0px 0px 0px;
-    width: 1024px;
-    height: 64px;
-    background: url(/Details/Search_G.png) center no-repeat;
-    background-size: cover;
+    width: 98%;
+    height: 40px;
+    ackground: #FFFFFF;
+    order-radius: 13px;
+    ox-shadow: 0 0 2px;
 }
 
 main {
@@ -48,35 +50,36 @@ h1 {
     font-family: "MyriadPro";
     color: #000000;
     font-size: 38px;
+    text-align: center;
 }
 
 subjects {
     position: relative;
     float: left;
-    margin-top: 100px;
-    width: 100%;
-    height: 233px;
-    background: url(Details/item.png) center no-repeat;
-    background-size: cover;
-    overflow-x: scroll;
-    verflow-x: hidden;
-    overflow-y: hidden;
+    margin-top: 0px;
+    width: 1024px;
+    height: 350px;
+    background: #FFFFFF;
+    border-radius: 30px;
 }
 
 main1 {
-    position: relative;
+    position: absolute;
+    left: 0;
+    margin: 200px 0px 0px 0px;
 }
 
 h2 {
     position: absolute;
-    margin: 25px 0px 0px 50px;
+    margin: 25px 0px 0px 20px;
     font-family: "MyriadPro";
     font-size: 30px;
 }
 
 bookinput {
     position: absolute;
-    margin: 15px 0px 0px 29px;
+    margin: 8px 0px 0px 0px;
+    font-size: 8px;
 }
 
 groupinput {
@@ -86,49 +89,40 @@ groupinput {
 
 subjectelement {
     position: relative;
-    margin: 10px 18px 0px 22px;
-    width: 296px;
-    height: 144px;
+    margin: 10px 0px -10px -5px;
+    width: 250px;
+    height: 128px;
     background: url(/Details/subject.png) center no-repeat;
     background-size: cover;
-    display: inline-block;
+    display: inline-table;
 }
 
 subject {
     position: absolute;
-    margin: 40px 0px 0px 20px;
+    margin: 30px 0px 0px 20px;
     font-family: "MyriadPro";
     font-size: 24px;
+    max-width: 130px;
 }
 
 subjectsscroll {
-    margin: 60px 0px 0px 25px;
     position: absolute;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    white-space: nowrap;
+    margin: 60px 0px 0px 4px;
 }
 
 books {
     position: relative;
     float: left;
-    margin-top: 150px;
-    width: 100%;
-    height: 342px;
-    background: url(/Details/book.png) center no-repeat;
-    background-size: cover;
-    overflow-x: scroll;
-    verflow-x: hidden;
+    margin-top: 50px;
+    width: 1024px;
+    height: 600px;
+    background: #FFFFFF;
+    border-radius: 30px;
 }
 
 booksscroll {
     position: absolute;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    white-space: nowrap;
-    margin: 30px 0px 0px 30px;
+    margin: 80px 0px 0px 8px;
 }
 
 bookelement {
@@ -136,16 +130,17 @@ bookelement {
     margin: 20px 0px 0px 0px;
     width: 200x;
     height: 229px;
-    display: inline-block;
+    display: inline-table;
 }
 
 bookname {
     position: relative;
     float: right;
-    margin: 25px 0px 0px 0px;
+    margin: 25px 0px 0px 10px;
     padding-right: 10px;
     font-family: "MyriadPro";
     font-size: 20px;
+    max-width: 150px;
 }
 
 description {
@@ -174,59 +169,63 @@ bookseach2 {
 }
 
 subjectstable {
-    position: relative;
+    position: absolute;
     width: 1024px;
     height: 1000px;
-    margin: 300px 0px 0px 0px;
+    margin: 100px 0px 0px 0px;
 }
 
 allsubjects {
     position: absolute;
     right: 0;
-    margin: 20px 40px;
+    margin: 10px 20px;
+    font-family: "MyriadPro";
 }
 
 allbooks {
     position: absolute;
     right: 0;
-    margin: 20px 40px;
+    margin: 10px 20px;
+    font-family: "MyriadPro";
 }
 
 bookstable {
-    position: relative;
-    height: 1000px;
-    margin: 300px 0px 0px 0px;
+    position: absolute;
+    width: 1024px;
+    height: 100%;
+    margin: 100px 0px 0px 0px;
 }
 
 
 
 bookauthor {
     color: #8D8F91;
+    max-width: 150px;
 }
 
 allbookstitle {
-    position: relative;
-    text-align: center;
-    margin: 250px;
+    position: absolute;
+    width: 500px;
+    margin: 0px 0px 0px 220px;
 }
 
 librarytitle {
-    position: absolute  ;
+    position: relative;
     text-align: center;
-    margin: 200px 0px 0px 150px;
+    margin: 500px;
 }
 
 allsubjectstitle {
-    position: relative;
-    text-align: center;
-    margin: 250px;
+    position: absolute;
+    width: 300px;
+    margin: 0px 0px 0px 320px;
 }
 
 bookscrollname {
     position: relative;
-    float: left;
+    float: right;
     font-family: "MyriadPro";
-    margin: -15px 0px 0px 15px;
+    margin: 25px 0px 0px 0px;
     font-size: 120%;
 }
 
@@ -269,7 +268,7 @@ input {
 
 .list li .amount {
   display: inline-block;
-  padding: 20px 30px;
+  padding: 0px 0px;
   background-color: rgb(83, 177, 211);
   border-radius: 3px;
   margin: 0 0 3px 10px;
@@ -277,19 +276,187 @@ input {
   color: white;
 }
 
-.search{
-    border-radius:20px;
-}
+
 
 .searchContainer img{
     width: 40px;
     height: 20px;
-    position:absolute;
-    top:20px;
+    position: absolute;
+    top: 20px;
     right: 20px;
 }
 
 dropdown-list {
     position: absolute;
-    padding: 22px 0px 0px 30px;
+    padding: 8px 0px 0px 15px;
 }
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+subjectstitle {
+    position: relative;
+}
+
+booktitle {
+    position: relative;
+}
+
+line {
+    position: relative;
+    float: left;
+    margin-top: 50px;
+    width: 100%;
+    max-width: 100%;
+    height: 150px;
+    background: url(Details/BLine.png) no-repeat center center fixed;
+    background-size: cover;
+    font-family: "MyriadPro";
+}
+
+
+
+
+
+book {
+    position: relative;
+    margin: 0px 0px 0px 0px;
+}
+
+bookinfo {
+    position: absolute;
+    margin: -350px 0px 0px 300px;
+    width: 600px;
+    font-family: "MyriadPro";
+    font-size: 24px;
+}
+
+
+
+
+
+readonline {
+    position: absolute;
+    width: 350px;
+    height: 34px;
+    text-align: center;
+    margin: -150px 0px 0px 300px;
+    border-radius: 8px;
+    box-shadow: 0 0 2px;
+    background: #f8c95c;
+    font-family: "MyriadPro";
+    font-size: 32px;
+}
+
+download {
+    position: absolute;
+    width: 350px;
+    height: 34px;
+    text-align: center;
+    margin: -100px 0px 0px 300px;
+    border-radius: 8px;
+    box-shadow: 0 0 2px;
+    background: #f8c95c;
+    font-family: "MyriadPro";
+    font-size: 32px;
+}
+
+
+
+algem {
+    position: relative;
+    margin: 10px 0px -10px -5px;
+    width: 250px;
+    height: 128px;
+    background: url(/Details/SubjectIcons/algem.png) center no-repeat;
+    background-size: cover;
+    display: inline-table;
+}
+
+english {
+    position: relative;
+    margin: 10px 0px -10px -5px;
+    width: 250px;
+    height: 128px;
+    background: url(/Details/SubjectIcons/english.png) center no-repeat;
+    background-size: cover;
+    display: inline-table;
+}
+
+geometry {
+    position: relative;
+    margin: 10px 0px -10px -5px;
+    width: 250px;
+    height: 128px;
+    background: url(/Details/SubjectIcons/maths.png) center no-repeat;
+    background-size: cover;
+    display: inline-table;
+}
+
+discrete {
+    position: relative;
+    margin: 10px 0px -10px -5px;
+    width: 250px;
+    height: 128px;
+    background: url(/Details/SubjectIcons/discret.png) center no-repeat;
+    background-size: cover;
+    display: inline-table;
+}
+
+history {
+    position: relative;
+    margin: 10px 0px -10px -5px;
+    width: 250px;
+    height: 128px;
+    background: url(/Details/SubjectIcons/history.png) center no-repeat;
+    background-size: cover;
+    display: inline-table;
+}
+
+matan {
+    position: relative;
+    margin: 10px 0px -10px -5px;
+    width: 250px;
+    height: 128px;
+    background: url(/Details/SubjectIcons/maths.png) center no-repeat;
+    background-size: cover;
+    display: inline-table;
+}
+
+russian {
+    position: relative;
+    margin: 10px 0px -10px -5px;
+    width: 250px;
+    height: 128px;
+    background: url(/Details/SubjectIcons/russian.png) center no-repeat;
+    background-size: cover;
+    display: inline-table;
+}
+
+other {
+    position: relative;
+    margin: 10px 0px -10px -5px;
+    width: 250px;
+    height: 128px;
+    background: url(/Details/SubjectIcons/physedu.png) center no-repeat;
+    background-size: cover;
+    display: inline-table;
+}
+
+info {
+    position: relative;
+    margin: 10px 0px -10px -5px;
+    width: 250px;
+    height: 128px;
+    background: url(/Details/SubjectIcons/history.png) center no-repeat;
+    background-size: cover;
+    display: inline-table;
+}
+
+h3 {
+     color: #F89E4C;
+}
+
+

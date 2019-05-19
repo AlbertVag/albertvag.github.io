@@ -7,7 +7,7 @@
         <link rel="stylesheet" type="text/css" href="main.css">
         <meta name="description" content="Быстрый поиск учебников для студентов по номеру группы">
         <link rel="stylesheet" href="main.css">
-        <script src='http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular.js'></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular.js"></script>
           <script  src="/Scripts/main.js"></script>
     </head>
     <body>
@@ -15,12 +15,6 @@
             <img src="/Icons/logo.png"
                  width="212">
         </logo>
-
-        <!--<groupsearch>
-            <groupinput>
-                <input type="groupchoise" value="ВУЗ, факультет, группа" size="32">
-            </groupinput>
-        </groupsearch>-->
         
           <groupsearch ng-app="app" ng-controller="mainCtrl" class="search">
   <dropdown-list data-items-list="itemsList" data-placeholder="Item name"></dropdown-list>
@@ -28,7 +22,8 @@
         
         <bookseach>
             <bookinput>
-                <input type="bookchoise" value="Книга или автор" size="145">
+                <img src="fakesearch.png" width="1024px">
+                <!--<input type="bookchoise" value="Книга или автор" size="98">-->
              </bookinput>
         </bookseach>
         
@@ -39,24 +34,33 @@
                 <h2>Предметы</h2>
                 </subjectstitle>
                 <subjectsscroll>
-                    <subjectelement>
-                        <subject>Алгебра</subject>
-                    </subjectelement>
-                    <subjectelement>
-                        <subject>Геометрия</subject>
-                    </subjectelement>
-                    <subjectelement>
+                    <a href="/Universities/KFU/ITIS/algem.html">
+                        <algem><subject>Алгебра и Геометрия</subject>
+                        </algem></a>
+                    <a href="/Universities/KFU/ITIS/english.html"><english>
+                        <subject>Английский язык</subject>
+                        </english></a>
+                    <a href="/Universities/KFU/ITIS/discrete.html"><discrete>
+                        <subject>Дискретная математика</subject>
+                        </discrete></a>
+                    <a href="/Universities/KFU/ITIS/info.html"><info>
+                        <subject>Информатика</subject>
+                        </info></a>
+                    <a href="/Universities/KFU/ITIS/history.html"><history>
                         <subject>История</subject>
-                    </subjectelement>
-                    <subjectelement>
-                        <subject>Дискретка</subject>
-                    </subjectelement>
-                    <subjectelement>
-                        <subject>Русский</subject>
-                    </subjectelement>
-                 </subjectsscroll>
+                        </history></a>
+                    <a href="/Universities/KFU/ITIS/matan.html"><matan>
+                        <subject>Мат. анализ</subject>
+                        </matan></a>
+                     <a href="/Universities/KFU/ITIS/russian.html"><russian>
+                        <subject>Русский язык</subject>
+                        </russian></a>
+                    <a href="/Universities/KFU/ITIS/other.html"><other>
+                        <subject>Другое</subject>
+                        </other></a>
+                </subjectsscroll>
                 <allsubjects>
-                    <a href="Subjects/index.html"><button>Все предметы</button></a>
+                    <a href="Subjects/index.html"><h3>Все предметы ></h3></a>
                 </allsubjects>
             </subjects>
             
@@ -65,37 +69,36 @@
                 <h2>Книги</h2>
                 </booktitle>
                 <booksscroll>
-                    <bookelement>
-                        <img src="/Details/bookTemplate_3.png" width="154" height="229">
-                        <bookscrollname>Название <bookauthor><br>Автор</bookauthor></bookscrollname>
+                    <a href="/Books/Demidovich/index.html"><bookelement>
+                        <img src="/Books/Demidovich/demidovich154.png" width="154" height="100%">
+                        <bookname>Сборник задач и упражнений по математическому анализу<bookauthor><br>Б.П. Демидович</bookauthor></bookname>
+                    </bookelement></a>
+                    <a href="/Books/SbornikZadachPoAlgebre/index.html"><bookelement>
+                        <img src="/Books/SbornikZadachPoAlgebre/Book_Alg.png" width="154" height="229">
+                        <bookname>Сборник задач по алгебре<bookauthor><br>А.И. Кострикин</bookauthor></bookname>
+                    </bookelement></a>
+                    <a href="/Books/SbornikZadachPoAnaliticheskoyGeometrii/index.html"><bookelement>
+                        <img src="/Books//SbornikZadachPoAnaliticheskoyGeometrii/Book_Alg.png" width="154" height="229">
+                        <bookname>Сборник задач по аналит. геометрии<bookauthor><br>Н.Н. Корнеева, М.Ф. Насрутдинов, Ф.Ф, Шарифуллина</bookauthor></bookname>
                     </bookelement>
-                    <bookelement>
-                        <img src="/Details/bookTemplate_3.png" width="154" height="229">
-                        <bookscrollname>Название <bookauthor><br>Автор</bookauthor></bookscrollname>
+                    </a>    
+                    <a href="/Books/MatematicheskiyAnaliz/index.html"><bookelement>
+                        <img src="/Books//MatematicheskiyAnaliz/Book_Mat.png" width="154" height="229">
+                        <bookname>Математический анализ (Базовый уровень)<bookauthor><br>Е.А. Широкова</bookauthor></bookname>
                     </bookelement>
-                    <bookelement>
-                        <img src="/Details/bookTemplate_3.png" width="154" height="229">
-                        <bookscrollname>Название <bookauthor><br>Автор</bookauthor></bookscrollname>
+                    </a>    
+                    <a href="/Books/CAEResultStudentsBook/index.html"><bookelement>
+                        <img src="/Books/CAEResultStudentsBook/caeresultGude154.png" width="154" height="229">
+                        <bookname>CAE Result Student's Book<bookauthor><br></bookauthor></bookname>
+                    </bookelement></a>
+                    <a href="/Books/IstoriaRossii/index.html"><bookelement>
+                        <img src="/Books/IstoriaRossii/Book_History.png" width="154" height="229">
+                        <bookname>История России<bookauthor><br>А.А. Радугин</bookauthor></bookname>
                     </bookelement>
-                    <bookelement>
-                        <img src="/Details/bookTemplate_3.png" width="154" height="229">
-                        <bookscrollname>Название <bookauthor><br>Автор</bookauthor></bookscrollname>
-                    </bookelement>
-                    <bookelement>
-                        <img src="/Details/bookTemplate_3.png" width="154" height="229">
-                        <bookscrollname>Название <bookauthor><br>Автор</bookauthor></bookscrollname>
-                    </bookelement>
-                    <bookelement>
-                        <img src="/Details/bookTemplate_3.png" width="154" height="229">
-                        <bookscrollname>Название <bookauthor><br>Автор</bookauthor></bookscrollname>
-                    </bookelement>
-                    <bookelement>
-                        <img src="/Details/bookTemplate_3.png" width="154" height="229">
-                        <bookscrollname>Название <bookauthor><br>Автор</bookauthor></bookscrollname>
-                    </bookelement>
+                    </a>    
                 </booksscroll>
                 <allbooks>
-                    <a href="Books/index.html"><button>Все учебники</button></a>
+                    <a href="Books/index.html"><h3>Все учебники ></h3></a>
                 </allbooks>
             </books>
             
